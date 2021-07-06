@@ -1,6 +1,21 @@
+import { useState } from 'react';
 import '../Header/header.css'
 
+
 export function Header() {
+    const [select, setSelect] = useState('select')
+
+
+
+    function Selected(){
+       
+       
+        setSelect('selected') 
+        console.log(select)
+    }
+    
+
+
 return (
     <>
     <div className="header1">
@@ -8,10 +23,11 @@ return (
     </div>
 
     <div className="container">
-        <div className='setor'>
-        <button>B2</button>
+        <div className={select}>
+        <button className={select} onClick={ () => Selected()}>B2</button>
          <p className='p'>00%</p>
         </div>
+     
         
         <div className='setor'>
         <button>B3</button>

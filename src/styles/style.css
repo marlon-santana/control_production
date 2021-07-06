@@ -79,6 +79,10 @@ button {
 button:hover {
     background: rgb(1, 94, 1);
 }
+
+.selected {
+    color: blueviolet;
+}
 .atrasos {
    
     display: flex;

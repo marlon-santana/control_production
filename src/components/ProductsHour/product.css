@@ -17,3 +17,23 @@
     background: green;
     color: white;
 }
+
+section {
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 500px;
+    background: rgb(37, 34, 209);
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman';
+    width: 100%;
+}
+label {
+    background: rgb(37, 34, 209);
+}

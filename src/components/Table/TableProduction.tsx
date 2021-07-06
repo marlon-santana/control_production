@@ -1,86 +1,65 @@
+import { useState } from 'react';
 import '../Table/tabela.css'
 
 
 
 export function TableProduct() {
+const [productHour, setProductHour] = useState([])
+
+
+function Soma() {
+  setProductHour(productHour)
+  const soma = [...productHour]
+    return soma
+  console.log(soma)
+}
+
     return (
+      <section className='align'>
+      <div className='tabela'>
+        <label className='hora'>05:30 / 06:30</label>
+    <input  placeholder='00'></input>
+        <input placeholder='85'></input>
+        
+      </div>
 
-        <div className='tabela'>
-            <table>
-        <thead>
-          <tr>
-            <th>Hora</th>
-            <th>Meta</th>
-            <th>Quantidade</th>
-          </tr>
-        </thead>
+      <div className='tabela'>
+        <label className='hora'>06:30 / 07:30</label>
+        <input  placeholder='00'></input>
+        <input placeholder='85'></input>
+        
+      </div>
 
-        <tbody>
-          
-            <tr>
-              <td>5:30/06:30</td>
-              <th className='th'>00</th>
-              <th className='th'>89</th>
-            </tr>
-            <tr>
-            <td >5:30/06:30</td>
-            <th className='th'>00</th>
-            <th className='th'>90</th>
-            </tr>
-            <tr>
-            <td >5:30/06:30</td>
-            <th className='th'>00</th>
-            <th className='th'>90</th>
-            </tr>
+      <div className='tabela'>
+        <label className='hora'>07:30 / 08:30</label>
+        <input  placeholder='00'></input>
+        <input placeholder='85'></input>
+        
+      </div>
 
-            <tr>
-            <td >5:30/06:30</td>
-            <th className='th'>00</th>
-            <th className='th'>90</th>
-            </tr>
+      <div className='tabela'>
+        <label className='hora'>08:30 / 09:30</label>
+        <input  placeholder='00'></input>
+        <input placeholder='85'></input>
+        
+      </div>
 
-            <tr>
-            <td >5:30/06:30</td>
-            <th className='th'>00</th>
-            <th className='th'>90</th>
-            </tr>
+      <div className='tabela'>
+        <label className='total'>TOTAL:</label>
+        <input  placeholder='00'></input>
+        <input placeholder='359'></input>
+        
+      </div>
 
-            <tr>
-            <td >5:30/06:30</td>
-            <th className='th'>00</th>
-            <th className='th'>90</th>
-            </tr>
+      <div className='tabela'>
+        <input  className='porcentagem' placeholder='50%'></input>
+        <p className='paragraph'> Da meta do dia</p>
+        
+      </div>
+      <button onClick={() => Soma()}>salvar</button>
+      </section>
+      
 
-            <tr>
-            <td >5:30/06:30</td>
-            <th className='th'>00</th>
-            <th className='th'>90</th>
-            </tr>
-
-            <tr>
-            <td >5:30/06:30</td>
-            <th className='th'>00</th>
-            <th className='th'>90</th>
-            </tr>
-
-            <tr className='footer'>
-            <td >TOTAL</td>
-            <th className='footer'>00</th>
-            <th className='footer'>90</th>
-            </tr>
-
-            <tr className='result'>
-            <td className='rtotal' >0%</td>
-            <p>Da meta do dia.</p>
-          
-            </tr>
-
-
-           
-
-           
-        </tbody>
-            </table>
-        </div>
+        
     );
 }
