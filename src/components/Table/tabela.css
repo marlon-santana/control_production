@@ -51,13 +51,23 @@
       padding-right: 318px;
   }
   
-  .porcentagem {
+  .porcentagemGren {
+      color: green;
       margin-top: 3px;
       font-size: 30px;
       padding-right: 200px;
       padding-bottom: 20px;
       
   }
+
+  .porcentagemRed {
+    color: red;
+    margin-top: 3px;
+    font-size: 30px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    
+}
   .paragraph {
     font-size: 30px;
     padding-right: 280px;

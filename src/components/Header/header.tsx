@@ -11,7 +11,7 @@ export function Header() {
        
        
         setSelect('selected') 
-        console.log(select)
+        
     }
     
 
@@ -30,7 +30,7 @@ return (
      
         
         <div className='setor'>
-        <button>B3</button>
+        <button className='b3'>B3</button>
          <p className='verde'>110%</p>
         </div>
 

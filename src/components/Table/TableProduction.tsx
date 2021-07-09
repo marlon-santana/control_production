@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 import '../Table/tabela.css'
 
@@ -9,6 +10,8 @@ const [hora2, setHora2] = useState('')
 const [hora3, setHora3] = useState('')
 const [hora4, setHora4] = useState('')
 const [total,setTotal ] = useState(0)
+const [porcentagemColor,setporcentagemColor] = useState('porcentagemGren')
+const [porcentagem, setPorcentagem ] = useState(0)
 const hora1Editada = parseInt(hora1) 
 const hora2Editada = parseInt(hora2) 
 const hora3Editada = parseInt(hora3) 
@@ -19,21 +22,26 @@ const hora4Editada = parseInt(hora4)
    function HoraValue () {
      
     const total = hora1Editada + hora2Editada + hora3Editada + hora4Editada
-    setHora1(hora1)
-    setHora2(hora2)
-    setHora3(hora3)
-    setHora4(hora4)
-    setTotal(total)
+    const meta = 340
+    const porcent = (total / meta) * 100
      
-     /*console.log( hora1Editada)
-     console.log( hora2Editada)
-     console.log( hora3Editada)
-     console.log( hora4Editada)
-     console.log(total)*/
+      setHora1(hora1)
+      setHora2(hora2)
+      setHora3(hora3)
+      setHora4(hora4)
+      setTotal(total)
+    setPorcentagem(porcent)
+    
      
    }
 
-   
+   useEffect(()=> {
+    if(porcentagem < 100 ) {
+      setporcentagemColor('porcentagemRed')
+    }else {
+      setporcentagemColor('porcentagemGren')
+    }
+   },[porcentagem])
   
    
 
@@ -76,7 +84,7 @@ const hora4Editada = parseInt(hora4)
       </div>
 
       <div className='tabela'>
-        <input  className='porcentagem' placeholder='50%'></input>
+      <strong className={porcentagemColor} placeholder='00%'>{porcentagem.toFixed(2)}%</strong>
         <p className='paragraph'> Da meta do dia</p>
         
       </div>

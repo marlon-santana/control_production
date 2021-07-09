@@ -8,11 +8,16 @@
     background: white;
     
 }
+button:active {
+    color: red;
+    background: rgb(221, 48, 5);
+}
 
-.selected {
+
+
+button:hover {
+
     color:white;
-    background:yellowgreen;
+    background: rgb(2, 165, 2);
 }
-button {
-    
-}
+
