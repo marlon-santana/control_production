@@ -3,15 +3,16 @@ import '../Header/header.css'
 
 
 export function Header() {
-    const [select, setSelect] = useState('select')
-
-
+    const [select, setSelect] = useState('')
+    const color =select;
+    
 
     function Selected(){
+
        
-       
-        setSelect('selected') 
+        setSelect(color ? '': 'select') 
         
+        console.log(color)
     }
     
 
@@ -23,8 +24,8 @@ return (
     </div>
 
     <div className="container">
-        <div className={select}>
-        <button className={select} onClick={ () => Selected()}>B2</button>
+        <div >
+        <button className={select}  onClick={ () => Selected()} >B2</button>
          <p className='p'>00%</p>
         </div>
      
