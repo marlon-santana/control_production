@@ -5,10 +5,10 @@ import '../Table/tabela.css'
 
 
 export function TableProduct() {
-const [hora1, setHora1] = useState('')
-const [hora2, setHora2] = useState('')
-const [hora3, setHora3] = useState('')
-const [hora4, setHora4] = useState('')
+const [hora1, setHora1] = useState('0')
+const [hora2, setHora2] = useState('0')
+const [hora3, setHora3] = useState('0')
+const [hora4, setHora4] = useState('0')
 const [total,setTotal ] = useState(0)
 const [porcentagemColor,setporcentagemColor] = useState('porcentagemGren')
 const [porcentagem, setPorcentagem ] = useState(0)
@@ -24,6 +24,7 @@ const hora4Editada = parseInt(hora4)
     const total = hora1Editada + hora2Editada + hora3Editada + hora4Editada
     const meta = 340
     const porcent = (total / meta) * 100
+    
      
       setHora1(hora1)
       setHora2(hora2)
@@ -84,7 +85,7 @@ const hora4Editada = parseInt(hora4)
       </div>
 
       <div className='tabela'>
-      <strong className={porcentagemColor} placeholder='00%'>{porcentagem.toFixed(2)}%</strong>
+      <strong className={porcentagemColor} placeholder='00%'>{porcentagem.toFixed(0)}%</strong>
         <p className='paragraph'> Da meta do dia</p>
         
       </div>
@@ -94,4 +95,5 @@ const hora4Editada = parseInt(hora4)
 
         
     );
+  
 }

@@ -2,21 +2,18 @@ import { useState } from 'react';
 import '../Header/header.css'
 
 
+
 export function Header() {
     const [select, setSelect] = useState('')
-    const color =select;
+    const [select2, setSelect2] = useState('')
+    const [select3, setSelect3] = useState('')
+    const [select4, setSelect4] = useState('')
     
-
-    function Selected(){
-
-       
-        setSelect(color ? '': 'select') 
-        
-        console.log(color)
-    }
+        console.log(select)
+        console.log(select2)
+        console.log(select3)
+        console.log(select4)
     
-
-
 return (
     <>
     <div className="header1">
@@ -25,23 +22,23 @@ return (
 
     <div className="container">
         <div >
-        <button className={select}  onClick={ () => Selected()} >B2</button>
-         <p className='p'>00%</p>
+        <button className={select}  onClick={ () => setSelect(select === 'select'? '': 'select')} >B2</button>
+        <p className='p'>00</p>
         </div>
      
         
         <div className='setor'>
-        <button className='b3'>B3</button>
+        <button className={select2}  onClick={ () => setSelect2(select2 === 'select2'? '': 'select2')} >B3</button>
          <p className='verde'>110%</p>
         </div>
 
         <div className='setor'>
-        <button>B5</button>
+        <button className={select3}  onClick={ () =>  setSelect3(select3 === 'select3'? '': 'select3') }>B5</button>
          <p className='verde'>100%</p>
         </div>
 
         <div className='setor'>
-        <button>B6</button>
+        <button className={select4}  onClick={ () =>  setSelect4(select4 === 'select4'? '': 'select4')}>B6</button>
          <p className='verde'>100%</p>
         </div>
 
@@ -72,6 +69,12 @@ return (
 
 
     <button className="atrasos">ATRASOS</button>
+
+    <div className='produto'>
+        <strong className='prodstrong'>PRODUTOS</strong>
+        <input className='prodinput'></input>
+        <button className='prodbutton'>ENTER</button>
+    </div>
 
 
    

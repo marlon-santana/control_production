@@ -6,6 +6,7 @@
     font-size: 30px;
     margin-left: 1px;
     background: white;
+    margin-bottom: 20px;
     
 }
 button:active {
@@ -22,8 +23,52 @@ button:hover {
 }
 
 .select {
-    background: rebeccapurple;
+    background: rgb(163, 163, 2);
+    color: white;
+}
+.select2 {
+    background: rgb(163, 163, 2);
+    color: white;
+}
+.select3 {
+    background: rgb(163, 163, 2);
+    color: white;
+}
+.select4 {
+    background: rgb(163, 163, 2);
+    color: white;
+}
+.produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.prodstrong {
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.prodinput {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    
+
+}
+.prodbutton {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 2px 2px;
+    margin-bottom: 20px;
+}
+.atrasos {
+    margin: 10px ;
+    padding: 3px;
 }
 
 
