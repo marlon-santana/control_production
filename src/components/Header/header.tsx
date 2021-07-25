@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import { useState } from 'react';
+import { contextTotal } from '../../contextTotal';
 import '../Header/header.css'
 
 
@@ -8,6 +10,8 @@ export function Header() {
     const [select2, setSelect2] = useState('')
     const [select3, setSelect3] = useState('')
     const [select4, setSelect4] = useState('')
+
+    const Total = useContext(contextTotal);
     
         console.log(select)
         console.log(select2)
@@ -23,7 +27,7 @@ return (
     <div className="container">
         <div >
         <button className={select}  onClick={ () => setSelect(select === 'select'? '': 'select')} >B2</button>
-        <p className='p'>00</p>
+        <p className='p'>{Total}</p>
         </div>
      
         
