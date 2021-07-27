@@ -11,7 +11,7 @@ export function Header() {
     const [select3, setSelect3] = useState('')
     const [select4, setSelect4] = useState('')
 
-    const Total = useContext(contextTotal);
+    const total = useContext(contextTotal);
     
         console.log(select)
         console.log(select2)
@@ -27,7 +27,7 @@ return (
     <div className="container">
         <div >
         <button className={select}  onClick={ () => setSelect(select === 'select'? '': 'select')} >B2</button>
-        <p className='p'>{Total}</p>
+        <p className='p'>{total}</p>
         </div>
      
         

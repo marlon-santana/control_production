@@ -1,11 +1,35 @@
 import { useEffect } from 'react';
+import { useContext } from 'react';
 import { useState } from 'react';
+import { useTotal } from '../../contextTotal';
 import '../Table/tabela.css'
 
 
 
+
+
 export function TableProduct() {
-const [hora1, setHora1] = useState('0')
+
+  const {total,
+    HoraValue,
+    setHora1,
+    setHora2,
+    setHora3,
+    setHora4,
+    setTotal,
+    setPorcentagem,
+    hora1Editada,
+    hora2Editada,
+    hora3Editada,
+    hora4Editada,
+    porcentagemColor,
+    setporcentagemColor,
+     porcentagem,
+  } = useTotal();
+  
+
+
+/*const [hora1, setHora1] = useState('0')
 const [hora2, setHora2] = useState('0')
 const [hora3, setHora3] = useState('0')
 const [hora4, setHora4] = useState('0')
@@ -43,6 +67,7 @@ const hora4Editada = parseInt(hora4)
       setporcentagemColor('porcentagemGren')
     }
    },[porcentagem])
+   */
   
    
 
