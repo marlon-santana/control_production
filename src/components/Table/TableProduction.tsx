@@ -4,7 +4,10 @@ import '../Table/tabela.css'
 
 
 
+
 export function TableProduct() {
+
+  
 const [hora1, setHora1] = useState('0')
 const [hora2, setHora2] = useState('0')
 const [hora3, setHora3] = useState('0')

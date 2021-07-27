@@ -1,3 +1,3 @@
 import { createContext } from 'react'
 
-export const contextTotal = createContext(123);
+export const contextTotal = createContext({});

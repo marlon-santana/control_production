@@ -13,6 +13,7 @@ export function Header() {
 
     const Total = useContext(contextTotal);
     
+     
         console.log(select)
         console.log(select2)
         console.log(select3)
